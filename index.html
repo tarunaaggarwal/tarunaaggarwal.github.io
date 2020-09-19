@@ -1,1 +1,93 @@
-Taruna Schuelke
+---
+layout: homepage
+title: ""
+---
+
+    <div class="team-boxed" style="width: 100%;background-color: rgb(255,255,255); ">
+        <div class="container">
+            <div class="intro"></div>
+            <div class="row people" style="background-color: rgba(255,255,255,0);padding-bottom: 0px; padding-top: 100px">
+                <div class="col-md-4 col-lg-4 col-xl-3 offset-lg-0 offset-xl-0 item">
+                    <div class="box" style="background-color: rgba(255,255,255,0);"><img src="assets/img/IMG_8937.jpeg" style="border-style: solid;border-color: rgb(0,0,0);"></div>
+                </div>
+                <div class="col-md-8 col-lg-8 col-xl-9 offset-xl-0 item">
+                    <div class="box" style="background-color: rgba(255,255,255,0);">
+                        <h3 class="name" style="margin-top: 10px;font-size: 40px;">Taruna Schuelke</h3>
+                        <hr>
+                        <p class="title" style="color: rgb(0,0,0);font-size: 16px;">PhD Student</p>
+                        <p class="description" style="color: rgb(73,74,75);font-size: 17px;">I'm a Ph.D. student in the Ecology, Evolution, and Marine Biology Department at UC Santa Barbara. My research interests include using<strong>&nbsp;</strong>Nanopore sequencing in order to gain new insights into the ecology and
+                            evolution of complex biological samples from marine environments. I'm passionate&nbsp;about all things&nbsp;<em>-omics</em>, and my favorite programming language is Python. I love to do and talk science with anyone who would
+                            humor me.<br></p>
+                        <div class="social"><a href="https://www.linkedin.com/in/taruna-schuelke-5710a4109/"><i class="fa fa-linkedin"></i></a>
+				<a href="https://github.com/tarunaaggarwal"><i class="fa fa-github"></i></a>
+				<a href="https://www.wilbankslab.org/"><i class="fa fa-flask"></i></a>
+				<a href="https://scholar.google.com/citations?user=7DPSG0kAAAAJ&hl=en&oi=sra"><i class="fa fa-google"></i></a>
+			</div>
+                    </div>
+                </div>
+                <div class="col-md-7 col-lg-7 col-xl-8 offset-xl-0 item">
+                    <div class="box" style="background-color: rgba(255,255,255,0);font-size: 16px;">
+                        <p class="title" style="color: rgb(0,0,0);font-size: 16px;">education</p>
+                        <hr>
+                        <ul style="margin-bottom: 0px;">
+                            <li class="text-left">PhD, Ecology, Evolution, and Marine Biology, 2023 (Expected)<br>University of California, Santa Barbara</li>
+                        </ul>
+                        <ul style="margin-bottom: 0px;">
+                            <li class="text-left">MSc, Genetics, 2016<br>University of New Hampshire</li>
+                        </ul>
+                        <ul style="margin-bottom: 0px;">
+                            <li class="text-left">BSc, Genetics, 2010<br>University of California, Santa Barbara&nbsp;</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-5 col-lg-5 col-xl-4 offset-xl-0 item">
+                    <div class="box" style="background-color: rgba(255,255,255,0);">
+                        <p class="title" style="color: rgb(0,0,0);font-size: 16px;">Research interest</p>
+                        <hr>
+                        <ul style="font-size: 16px;">
+                            <li>Nanopore Sequencing</li>
+                            <li>Bioinformatics</li>
+                            <li>Metagenomics</li>
+                            <li>Microbial Ecology</li>
+                            <li>Evolutionary Biology</li>
+                            <li>Conservation Biology</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr style="color: rgb(255,255,255);background-color: #ffffff;margin-top: 0px;margin-bottom: 0px;padding-top: 15px;padding-bottom: 0px;">
+            </div>
+        </div>
+    </div>
+    <div class="article-list" style="background-color: rgba(255,255,255,0.14);">
+        <div class="container">
+            <div class="intro" style="width: 100%;margin-right: 0px;margin-left: 0px;">
+                <h2 class="text-left" id="publications" style="width: 100%;margin-bottom: 5px; padding-top: 10px">Publications</h2>
+            </div>
+            <hr>
+            <div class="row articles">
+
+		{% assign sorted_posts = site.posts | sort  %}
+                    {% for articles in sorted_posts %}
+
+                <div class="col-sm-12 col-md-12 col-lg-12 item" style="padding-top: 5px;">
+                    <a href="{{ articles.pdf }}" target="_blank"><h3 class="text-left name" style="font-size: 20px">{{ articles.title }}</h3></a>
+                    <p class="text-left description" style="margin-top: 0px; font-size: 20px">{{ articles.authors }}</p><a class="action" href="#"></a></div>
+
+                    {% endfor %}
+
+            </div>
+        </div>
+    </div>
+    <div class="article-list" style="background-color: rgba(255,255,255,0.14);">
+        <div class="container">
+            <div class="intro" style="width: 100%;margin-right: 0px;margin-left: 0px;">
+                <h2 class="text-left" id="contact" style="width: 100%;margin-bottom: 5px;">Contact Me&nbsp;</h2>
+            </div>
+            <hr>
+            <div class="row articles">
+                <div class="col-sm-12 col-md-12 col-lg-12 item" style="padding-top: 5px;"><a href="#"></a>
+                    <h1 class="name" style="font-size: 34px;">taruna@ucsb.edu</h1><a class="action" href="#"></a></div>
+            </div>
+        </div>
+    </div>
+
