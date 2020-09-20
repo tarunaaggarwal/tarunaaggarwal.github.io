@@ -71,7 +71,7 @@ title: ""
             <hr>
            <div class="row articles">
 
-                {% assign sorted_posts = site.posts | sort  %}
+                {% assign sorted_posts = site.posts | sort | reverse %}
                     {% for articles in sorted_posts %}
 
                 <div class="col-sm-12 col-md-12 col-lg-12 item" style="padding-top: 5px;">
