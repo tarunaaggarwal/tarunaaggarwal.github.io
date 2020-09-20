@@ -66,29 +66,36 @@ title: ""
         </div>
     </div>
 
+    <div class="article-list" style="background-color: rgba(255,255,255,0.14);">
+        <div class="container">
+            <div class="intro" style="width: 100%;margin-right: 0px;margin-left: 0px;">
+                <h2 class="text-left title" id="publications" style="width: 100%;margin-bottom: 5px; font-size: 20px">Publications</h2>
+            </div>
+            <hr>
+           <div class="row articles">
 
-           <div class="col-md-12 col-lg-12 col-xl-12 offset-xl-0 item" style="margin:20px">
-                    <div class="box" style="background-color: rgba(255,255,255,0);">
-                        <p class="text-left title" style="color: rgb(0,0,0);font-size: 20px;" id="publications" >Publications</p>
-                        <hr>
-			    
-			    {% assign sorted_posts = site.posts | sort | reverse %}
+                {% assign sorted_posts = site.posts | sort  %}
                     {% for articles in sorted_posts %}
-			    
-                        <a href="{{ articles.pdf }}" target="_blank"><h3 class="text-left name" style="font-size: 20px;">{{ articles.title }}</h3></a>
-                        <p class="text-left description" style="margin-top: 0px;font-size: 20px;">{{ articles.authors }}</p>
-			                        {% endfor %}
-                    </div>
-                </div>
 
-           <div class="col-md-12 col-lg-12 col-xl-12 offset-xl-0 item">
-                    <div class="box" style="background-color: rgba(255,255,255,0);">
-                        <p class="text-left title" style="color: rgb(0,0,0);font-size: 20px;" id="contact" >Contact Me</p>
-                        <hr>
-		
-			    
-                        <h3 class="text-left name" style="font-size: 20px; color: rgb(10,101,8);">taruna@ucsb.edu</h3>
-                    </div>
-                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 item" style="padding-top: 5px;">
+                    <a href="{{ articles.pdf }}" target="_blank"><h3 class="text-left name" style="font-size: 20px">{{ articles.title }}</h3></a>
+                    <p class="text-left description" style="margin-top: 0px; font-size: 20px">{{ articles.authors }}</p><a class="action" href="#"></a></div>
 
+                    {% endfor %}
+
+            </div>
+        </div>
+    </div>
+    <div class="article-list" style="background-color: rgba(255,255,255,0.14);">
+        <div class="container">
+            <div class="intro" style="width: 100%;margin-right: 0px;margin-left: 0px;">
+                <h2 class="text-left title" id="contact" style="width: 100%;margin-bottom: 5px; font-size: 20px">Contact Me&nbsp;</h2>
+            </div>
+            <hr>
+            <div class="row articles">
+                <div class="col-sm-12 col-md-12 col-lg-12 item" style="padding-top: 5px;"><a href="#"></a>
+                    <h1 class="name" style="font-size: 34px;">taruna@ucsb.edu</h1><a class="action" href="#"></a></div>
+            </div>
+        </div>
+    </div>
 
