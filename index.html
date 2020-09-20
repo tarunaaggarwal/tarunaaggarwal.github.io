@@ -32,7 +32,7 @@ title: ""
 
                 <div class="col-md-7 col-lg-7 col-xl-8 offset-xl-0 item">
                     <div class="box" style="background-color: rgba(255,255,255,0);font-size: 16px;">
-                        <p class="text-left title" style="color: rgb(0,0,0);font-size: 20px;">education</p>
+                        <p class="text-left title" style="color: rgb(0,0,0);font-size: 20px;">Education</p>
                         <hr>
                         <ul style="margin-bottom: 0px;">
                             <li class="text-left" style="font-family: arial;font-weight: bold;font-size: 20px;">PhD, Ecology, Evolution, and Marine Biology, 2023 (Expected)<br></li>
@@ -66,36 +66,27 @@ title: ""
         </div>
     </div>
 
-    <div class="article-list" style="background-color: rgba(255,255,255,0.14);">
-        <div class="container">
-            <div class="box" style="width: 100%;margin-right: 0px;margin-left: 0px;">
-                <p class="text-left title" id="publications" style="width: 100%;margin-bottom: 5px;font-size: 20px;color: rgb(0,0,0)">Publications</p>
-            </div>
-            <hr>
-           <div class="row articles">
-
-                {% assign sorted_posts = site.posts | sort | reverse %}
+           <div class="col-md-5 col-lg-12 col-xl-4 offset-xl-0 item">
+                    <div class="box" style="background-color: rgba(255,255,255,0);">
+                        <p class="text-left title" style="color: rgb(0,0,0);font-size: 16px;" id="publications" >Publications</p>
+                        <hr>
+			    
+			    {% assign sorted_posts = site.posts | sort | reverse %}
                     {% for articles in sorted_posts %}
+			    
+                        <a href="{{ articles.pdf }}" target="_blank"><h3 class="text-left name" style="font-size: 20px;">{{ articles.title }}</h3></a>
+                        <p class="text-left description" style="margin-top: 0px;font-size: 20px;">{{ articles.authors }}</p>
+                    </div>
+                </div>
 
-                <div class="col-sm-12 col-md-12 col-lg-12 item" style="padding-top: 5px;">
-                    <a href="{{ articles.pdf }}" target="_blank"><h3 class="text-left name" style="font-size: 20px">{{ articles.title }}</h3></a>
-                    <p class="text-left description" style="margin-top: 0px; font-size: 20px">{{ articles.authors }}</p><a class="action" href="#"></a></div>
+           <div class="col-md-5 col-lg-12 col-xl-4 offset-xl-0 item">
+                    <div class="box" style="background-color: rgba(255,255,255,0);">
+                        <p class="text-left title" style="color: rgb(0,0,0);font-size: 16px;" id="contact" >Contact Me</p>
+                        <hr>
+		
+			    
+                        <h3 class="text-left name" style="font-size: 20px; color: rgb(10,101,8);">taruna@ucsb.edu</h3>
+                    </div>
+                </div>
 
-                    {% endfor %}
-
-            </div>
-        </div>
-    </div>
-    <div class="article-list" style="background-color: rgba(255,255,255,0.14);">
-        <div class="container">
-            <div class="intro" style="width: 100%;margin-right: 0px;margin-left: 0px;">
-                <p class="text-left" id="contact" style="width: 100%;margin-bottom: 5px;font-size: 20px;">Contact Me&nbsp;</h2>
-            </div>
-            <hr>
-            <div class="row articles">
-                <div class="col-sm-12 col-md-12 col-lg-12 item" style="padding-top: 5px;"><a href="#"></a>
-                    <h1 class="name text-left" style="font-size: 20px; color: rgb(10,101,8);">taruna@ucsb.edu</h1><a class="action" href="#"></a></div>
-            </div>
-        </div>
-    </div>
 
